@@ -1,0 +1,5 @@
+public class ContactSearch {
+    public static List<Contact> searchForContacts(String lastName, String postalCode){
+        return[Select id, name from Contact where LastName = :lastname AND MailingPostalCode = :postalCode];
+    }
+}
