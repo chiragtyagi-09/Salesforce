@@ -1,0 +1,12 @@
+public class StringListTest {
+    public static List<String> generateStringList(Integer numberOfStrings) {
+        List<String> listOfStrings = new List<String>();
+        
+        for(Integer i=0; i < numberOfStrings; i++){
+            System.debug('Generated String: ' + listOfStrings);
+            listOfStrings.add('Test ' + i);
+        }
+        return listOfStrings;
+      
+    }  
+}
