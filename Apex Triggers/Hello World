@@ -1,0 +1,10 @@
+**Code**
+
+trigger HelloWorldTrigger on Account (before insert) {
+    System.debug('Hello World');
+}
+
+**Debug**
+
+Account a = new Account(Name='Test Trigger');
+insert a;
